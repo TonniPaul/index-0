@@ -158,7 +158,7 @@ const HomePage = () => {
                </motion.div>
 
                <footer className="py-12 px-6 bg-card text-center border-t border-white/4 mt-10">
-                  <span className="flex gap-[1ch] w-fit mx-auto">
+                  <span className="flex gap-[1ch] w-fit mx-autop">
                      <span>Made with</span>
                      <Heart className="w-4 h-4 text-primary fill-primary animate-pulse-slow" />
                   </span>
