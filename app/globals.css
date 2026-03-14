@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --max-width: 1352px;
+  --extra-width: calc(100% - var(--max-width));
+  --half-bleed: calc(calc(var(--extra-width) / 2));
+  --full-bleed: calc(calc(var(--half-bleed)) + 2rem);
+}
+
+@theme {
+
+--background: 30 50% 97%;
+    --foreground: 350 30% 18%;
+
+    --breakpoint-xs: 300px;
+  --breakpoint-smd: 480px;
+  --breakpoint-lmd: 800px;
+  --breakpoint-2xl: 1400px;
+
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-20: 20px;
+  --radius-30: 30px;
+  --radius-40: 40px;
+  --radius-50: 50px;
+
+  --spacing-a-10: 10px;
+  --spacing-a-20: 20px;
+  --spacing-a-30: 30px;
+  --spacing-a-40: 40px;
+  --spacing-a-50: 50px;
+  --spacing-a-100: 100px;
+  --spacing-a-150: 150px;
+  --spacing-a-250: 250px;
+  --spacing-a-300: 300px;
+  --spacing-a-400: 400px;
+  --spacing-a-500: 500px;
+
+  --text-a-10: 10px;
+  --text-a-12: 12px;
+  --text-a-14: 14px;
+  --text-a-16: 16px;
+  --text-a-18: 18px;
+  --text-a-20: 20px;
+  --text-a-22: 22px;
+  --text-a-24: 24px;
+  --text-a-28: 28px;
+  --text-a-30: 30px;
+  --text-a-32: 32px;
+  --text-a-34: 34px;
+  --text-a-36: 36px;
+  --text-a-38: 38px;
+  --text-a-48: 48px;
+}
+
+@layer base {
+  /* body {
+    @apply bg-[#141414] text-white;
+  } */
+}
+
+
+@layer utilities {
+    .app-padding {
+    @apply px-6 md:px-10 xl:px-(--full-bleed);
+  }
+
+  .app-padding-y {
+    @apply py-a-50 md:py-a-100;
+  }
+
+  .app-padding-t {
+    @apply pt-a-50 md:pt-a-100;
+  }
+
+  .app-padding-b {
+    @apply pb-a-50 md:pb-a-100;
+  }
+
+  .text-gradient-love {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(350 60% 55%), hsl(38 70% 60%));
+  }
+
+  .bg-gradient-romantic {
+    background-image: linear-gradient(135deg, hsl(30 50% 97%), hsl(350 70% 88% / 0.3));
+  }
+
+  .shadow-romantic {
+    box-shadow: 0 10px 40px -10px hsl(350 60% 55% / 0.15);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+}
+
+
+ .bg-gradient-romantic {
+    background-image: linear-gradient(135deg, hsl(30 50% 97%), hsl(350 70% 88% / 0.3));
+  }
