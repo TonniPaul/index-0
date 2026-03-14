@@ -12,9 +12,7 @@ const hearts = Array.from({ length: 12 }, (_, i) => ({
 }));
 
 const FloatingHearts = () => {
-   // No need for height state or effect
 
-   // Optionally, check if window is defined (for SSR safety)
    if (typeof window === "undefined") return null;
 
    return (

@@ -158,10 +158,12 @@ const HomePage = () => {
                </motion.div>
 
                <footer className="py-12 px-6 bg-card text-center border-t border-white/4 mt-10">
-                  <div className="flex items-center justify-center gap-2 text-muted-foreground font-body text-sm">
+                  <span className="flex gap-[1ch] w-fit mx-auto">
                      <span>Made with</span>
                      <Heart className="w-4 h-4 text-primary fill-primary animate-pulse-slow" />
-                     <span>just for you (Aluko Esther Morolake)</span>
+                  </span>
+                  <div className="flex items-center justify-center gap-2 text-muted-foreground font-body text-sm ">
+                     <span className="block">just for you (Aluko Esther Morolake)</span>
                   </div>
                   <p className="text-xs text-muted-foreground/60 mt-2 font-body">
                      One month down, forever to go 💕
